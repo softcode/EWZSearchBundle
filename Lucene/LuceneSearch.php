@@ -59,7 +59,7 @@ class LuceneSearch
 
     public function find($query)
     {
-        return $this->index->find($query);
+        return call_user_func_array(array($this->index, 'find'), func_get_args());
     }
 
     public function updateDocument($document)
