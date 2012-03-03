@@ -1,7 +1,7 @@
 EWZSearchBundle
 =============
 
-This bundle advance search capability for Symfony2.
+This bundle provides advance search capability for Symfony.
 
 ## Installation
 
