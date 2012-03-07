@@ -21,7 +21,7 @@ add the following entries to the `deps` in the root of your project file:
 ;------------
 [Search]
     git=http://github.com/excelwebzone/zend-search.git
-    target=/zend-search/Zend/Search
+    target=/zend-search
 
 ```
 
