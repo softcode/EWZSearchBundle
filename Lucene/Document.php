@@ -3,7 +3,7 @@
 namespace EWZ\Bundle\SearchBundle\Lucene;
 
 use EWZ\Bundle\SearchBundle\Lucene\Field;
-use Zend\Search\Lucene\Document as ZendDocument;
+use ZendSearch\Lucene\Document as ZendDocument;
 
 class Document extends ZendDocument
 {

@@ -2,7 +2,7 @@
 
 namespace EWZ\Bundle\SearchBundle\Lucene;
 
-use Zend\Search\Lucene\Lucene as ZendLucene;
+use ZendSearch\Lucene\Lucene as ZendLucene;
 
 class Lucene extends ZendLucene
 {}
