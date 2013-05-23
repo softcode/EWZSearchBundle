@@ -18,7 +18,7 @@ class LuceneSearchTest extends \PHPUnit_Framework_TestCase
 
     public function testInitiatesLucene()
     {
-        $this->assertEquals('ZendSearch\Lucene\Index', get_class($this->search->getIndex()), 'return the index object that should have been created on construct');
+        $this->assertEquals('Zend\Search\Lucene\Index', get_class($this->search->getIndex()), 'return the index object that should have been created on construct');
     }
 
     public function testAddDocument()

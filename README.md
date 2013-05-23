@@ -1,5 +1,5 @@
 EWZSearchBundle
-===============
+=============
 
 This bundle provides advance search capability for Symfony.
 
@@ -20,8 +20,8 @@ add the following entries to the `deps` in the root of your project file:
 ; Dependency:
 ;------------
 [Search]
-    git=http://github.com/zendframework/ZendSearch.git
-    target=/zendframework/ZendSearch
+    git=http://github.com/excelwebzone/zend-search.git
+    target=/zend-search
 
 ```
 
@@ -45,7 +45,7 @@ $ mkdir -pv vendor/bundles/EWZ/Bundle
 Next, add the necessary submodules:
 
 ``` bash
-$ git submodule add git://github.com/zendframework/ZendSearch.git vendor/zendframework/ZendSearch
+$ git submodule add git://github.com/excelwebzone/zend-search.git vendor/zend-search/Zend/Search
 $ git submodule add git://github.com/excelwebzone/EWZSearchBundle.git vendor/bundles/EWZ/Bundle/SearchBundle
 ```
 
@@ -60,7 +60,7 @@ Add the following entry to your autoloader:
 $loader->registerNamespaces(array(
     // ...
 
-    'ZendSearch'   => __DIR__.'/../vendor/zendframework/ZendSearch/library',
+    'Zend\\Search' => __DIR__.'/../vendor/zend-search/',
     'EWZ'          => __DIR__.'/../vendor/bundles',
 ));
 ```
@@ -91,12 +91,12 @@ Finally, add the following to your config file:
 # app/config/config.yml
 
 ewz_search:
-    analyzer: ZendSearch\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive
+    analyzer: Zend\Search\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive
     path:     %kernel.root_dir%/cache/%kernel.environment%/lucene/index
 ```
 
 **NOTE**: If you want to include numbers in your search queries then you'll need to set
-analyzer to ZendSearch\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive
+analyzer to Zend\Search\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive
 See http://framework.zend.com/manual/en/zend.search.lucene.extending.html for more information
 
 Congratulations! You're ready!

@@ -2,7 +2,7 @@
 
 namespace EWZ\Bundle\SearchBundle\Lucene;
 
-use ZendSearch\Lucene\Document\Field as ZendField;
+use Zend\Search\Lucene\Document\Field as ZendField;
 
 class Field extends ZendField
 {

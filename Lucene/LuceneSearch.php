@@ -3,8 +3,8 @@
 namespace EWZ\Bundle\SearchBundle\Lucene;
 
 use EWZ\Bundle\SearchBundle\Lucene\Lucene;
-use ZendSearch\Lucene\Analysis\Analyzer\Analyzer;
-use ZendSearch\Lucene\Index\Term;
+use Zend\Search\Lucene\Analysis\Analyzer\Analyzer;
+use Zend\Search\Lucene\Index\Term;
 
 class LuceneSearch
 {

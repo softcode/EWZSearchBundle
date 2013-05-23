@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('analyzer')->defaultValue('ZendSearch\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive')->end()
+                ->scalarNode('analyzer')->defaultValue('Zend\Search\Lucene\Analysis\Analyzer\Common\TextNum\CaseInsensitive')->end()
                 ->scalarNode('path')->defaultValue('%kernel.root_dir%/cache/%kernel.environment%/lucene/index')->end()
             ->end()
         ;
