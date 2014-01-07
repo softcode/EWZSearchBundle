@@ -12,12 +12,12 @@
             "homepage": "http://excelwebzone.com/"
         }
     ],
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/softcode/zend-search"
-		}
-	],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/softcode/zend-search"
+        }
+    ],
     "require": {
         "symfony/framework-bundle": "2.*",
         "excelwebzone/zend-search": "dev-master"
